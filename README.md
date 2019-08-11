@@ -1,4 +1,4 @@
-# NWUVaalBritehouseProject2019
+# NWU Vaal - Britehouse Project 2019
 This is a project given to the North West University Vaal Triangle Campus BScIT third year students from Britehouse accompanied with a guest lecture on ASP.NET MVC Core Web app development, Entity Framework and Repository Pattern
 
 ## Data
