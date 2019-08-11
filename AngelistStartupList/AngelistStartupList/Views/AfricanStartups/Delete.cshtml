@@ -1,0 +1,177 @@
+﻿@model AngelistStartupList.Models.AfricanStartup
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>AfricanStartup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AngellistUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AngellistUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BlogUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CommunityProfile)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CommunityProfile)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanySize)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanySize)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanyType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanyUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreatedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CrunchbaseUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CrunchbaseUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FacebookUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FacebookUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FollowerCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FollowerCount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HighConcept)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HighConcept)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkedinUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LinkedinUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Locations)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Locations)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LogoUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LogoUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Markets)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Markets)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductDesc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductDesc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Quality)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Quality)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Screenshots)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Screenshots)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ThumbUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ThumbUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TwitterUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TwitterUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VideoUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VideoUrl)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ListId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

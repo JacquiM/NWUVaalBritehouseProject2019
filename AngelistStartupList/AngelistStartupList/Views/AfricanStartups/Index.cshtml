@@ -1,0 +1,191 @@
+﻿@model IEnumerable<AngelistStartupList.Models.AfricanStartup>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ListId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AngellistUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BlogUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommunityProfile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanySize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrunchbaseUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FacebookUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FollowerCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HighConcept)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LinkedinUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Locations)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LogoUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Markets)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductDesc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Screenshots)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThumbUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TwitterUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UpdatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VideoUrl)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ListId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AngellistUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BlogUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommunityProfile)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanySize)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CrunchbaseUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FacebookUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FollowerCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HighConcept)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LinkedinUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Locations)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LogoUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Markets)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductDesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quality)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Screenshots)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThumbUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TwitterUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VideoUrl)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ListId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ListId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ListId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
